@@ -1,0 +1,8 @@
+creating home page spec	
+
+we should see a link called 'Home'
+we should see a link called 'Atheletes Den'
+we should see a link called 'Workout Lounge'
+we should see a link called 'Show off your workout'
+
+call controller DashboardsController
