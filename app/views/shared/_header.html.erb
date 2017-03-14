@@ -26,11 +26,15 @@
 		<li> <%= link_to 'Sign in', new_user_session_path %></li>
 		<% else %>
         <li> <%= link_to 'Sign out', destroy_user_session_path, method: :delete %></li>
+  	  	<div class="navbar-right signed-in-user">
+  	                <p class="navbar-text">
+  	                  Signed in as <%= "#{current_user.email}" %>
+  	                </p>
+  	  		  </div>
 		<% end %>
       </ul>
-	  	<% if user_signed_in? %>
-			<p class="navbar-text navbar-right">Signed in as <%= current_user.email if current_user %> </p>
-		<% end %>
+	  
+	  	
 	  
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
